@@ -61,3 +61,33 @@
 .hero .hero-logo img{width:100%;height:100%;max-height:135px;object-fit:contain}
 .sidebar .brand img{object-fit:contain;background:#fff;border-radius:9px;padding:3px}
 @media(max-width:720px){.header-logo{width:74px;height:52px}.hero .hero-logo{width:130px;min-width:130px;min-height:90px;padding:8px}.hero .hero-logo img{max-height:90px}}
+
+/* Dashboard compacto, responsivo e legível no celular */
+@media(max-width:780px){
+ header{height:76px;gap:12px;padding:0 16px}
+ header h1{font-size:20px}
+ header p{font-size:11px;line-height:1.3;max-width:240px}
+ .header-logo{width:58px;height:46px;flex-shrink:0}
+ .page{padding:14px 12px 34px}
+ .hero{min-height:0;padding:23px 19px;border-radius:22px;display:block}
+ .hero h2{font-size:25px;line-height:1.17;margin:9px 0}
+ .hero p{font-size:13px;line-height:1.55;margin:10px 0 0}
+ .hero .eyebrow{font-size:10px;letter-spacing:.18em}
+ .hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:19px}
+ .hero-actions button{min-height:47px;padding:9px 7px;font-size:12px;line-height:1.2;white-space:normal;text-align:center;border-radius:12px}
+ .hero-actions button svg{width:17px;height:17px;flex-shrink:0}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:13px 0}
+ .stat{min-width:0;padding:14px;border-radius:16px;min-height:125px}
+ .stat-icon{width:34px;height:34px;border-radius:10px;margin-bottom:9px}
+ .stat-icon svg{width:19px;height:19px}
+ .stat strong{font-size:21px;margin:4px 0}
+ .stat span,.stat small{font-size:11px}
+ .grid-2{gap:12px;margin:12px 0}
+ .card{border-radius:17px;padding:14px}
+}
+@media(max-width:360px){
+ .hero-actions button{font-size:11px}
+ .stats{gap:8px}
+ .stat{padding:11px}
+ header p{max-width:180px}
+}
