@@ -30,6 +30,8 @@ jobs:
           node-version: '22'
       - run: npm install
       - run: npm run build
+        env:
+          PUBLISH_WEB: 'true'
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
