@@ -6,14 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "android:prepare": "npm run build && npx cap sync android"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "lucide-react": "latest",
     "vite": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "@capacitor/core": "^7.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "@capacitor/android": "^7.4.0"
+  }
 }
