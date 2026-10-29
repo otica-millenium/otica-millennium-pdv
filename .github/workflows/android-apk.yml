@@ -23,7 +23,13 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - uses: android-actions/setup-android@v3
+      # O runner ubuntu-latest já inclui Android SDK e sdkmanager.
+      # Evita a etapa externa setup-android, que falhou antes da compilação.
+      - name: Verificar Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          test -d "$ANDROID_HOME"
+          test -x "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" || command -v sdkmanager
       - name: Instalar dependências
         run: npm install
       - name: Gerar site
