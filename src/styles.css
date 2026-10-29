@@ -53,3 +53,11 @@
 .catalog-results{min-width:0}
 .catalog-results .product-grid{margin-top:0}
 @media(max-width:650px){.catalog-layout{grid-template-columns:1fr;gap:12px}.catalog-categories{display:flex;flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;position:relative;padding:9px;gap:7px}.catalog-categories h3{display:none}.catalog-categories button{min-width:max-content;white-space:nowrap;scroll-snap-align:start;padding:11px}.catalog-results h3{margin:8px 0 12px}}
+
+/* Official Ótica MilleniuM branding */
+.header-logo{width:68px;height:58px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;padding:4px;flex-shrink:0;border:1px solid #e4ecf7}
+.header-logo img{display:block;width:100%;height:100%;object-fit:contain}
+.hero .hero-logo{width:180px;min-width:180px;min-height:135px;border-radius:18px;background:#fff;display:flex;align-items:center;justify-content:center;padding:12px;overflow:hidden}
+.hero .hero-logo img{width:100%;height:100%;max-height:135px;object-fit:contain}
+.sidebar .brand img{object-fit:contain;background:#fff;border-radius:9px;padding:3px}
+@media(max-width:720px){.header-logo{width:74px;height:52px}.hero .hero-logo{width:130px;min-width:130px;min-height:90px;padding:8px}.hero .hero-logo img{max-height:90px}}
