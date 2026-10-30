@@ -3,6 +3,8 @@
   "appName": "Ótica MilleniuM PDV",
   "webDir": "dist",
   "server": {
-    "androidScheme": "https"
+    "url": "https://otica-millenium.github.io/otica-millennium-pdv/",
+    "androidScheme": "https",
+    "cleartext": false
   }
 }
