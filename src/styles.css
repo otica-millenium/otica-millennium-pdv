@@ -91,3 +91,12 @@
  .stat{padding:11px}
  header p{max-width:180px}
 }
+
+/* Dashboard: sem logo duplicada, foco nos atalhos e indicadores */
+.hero{isolation:isolate}
+.hero>div:first-child{position:relative;z-index:1;flex:1;min-width:0}
+.hero:after{pointer-events:none;opacity:.4}
+.hero-actions{flex-wrap:wrap}
+.hero-actions button{font-weight:650;transition:transform .15s ease,box-shadow .15s ease}
+.hero-actions button:active{transform:scale(.98)}
+@media(max-width:780px){.hero{padding:25px 20px 23px;background:linear-gradient(125deg,#071c40 0%,#0b438f 58%,#087be7 100%)}.hero h2{max-width:330px;font-size:26px}.hero-actions{margin-top:20px}.hero-actions button{min-height:52px}.hero-actions .primary{box-shadow:0 5px 16px rgba(0,0,0,.14)}.stat{min-height:118px}.grid-2{grid-template-columns:1fr}}
