@@ -100,3 +100,7 @@
 .hero-actions button{font-weight:650;transition:transform .15s ease,box-shadow .15s ease}
 .hero-actions button:active{transform:scale(.98)}
 @media(max-width:780px){.hero{padding:25px 20px 23px;background:linear-gradient(125deg,#071c40 0%,#0b438f 58%,#087be7 100%)}.hero h2{max-width:330px;font-size:26px}.hero-actions{margin-top:20px}.hero-actions button{min-height:52px}.hero-actions .primary{box-shadow:0 5px 16px rgba(0,0,0,.14)}.stat{min-height:118px}.grid-2{grid-template-columns:1fr}}
+
+/* Navegação móvel e atualização por gesto */
+.mobile-navigation{display:flex;align-items:center;gap:5px}.back-btn{display:none;background:transparent;border:0;color:#092149;font-size:28px;cursor:pointer;padding:6px 10px}.refresh-indicator{position:fixed;z-index:110;top:82px;left:50%;transform:translateX(-50%);background:#0b58c9;color:white;padding:8px 16px;border-radius:20px;box-shadow:0 5px 18px #0018}.mobile-overlay{position:fixed;inset:0;background:rgba(0,10,30,.48);z-index:19}
+@media(max-width:780px){.back-btn{display:block}.menu-btn{font-size:24px;min-width:42px;min-height:44px;cursor:pointer}.sidebar{z-index:30;max-height:100dvh}.sidebar nav{min-height:0;overflow-y:auto;overscroll-behavior:contain}.mobile-overlay{z-index:25}.refresh-indicator{top:78px}}
