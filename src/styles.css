@@ -112,3 +112,7 @@
 /* Menu lateral: botão de fechar acessível e navegação móvel */
 .sidebar-top{display:none}
 @media(max-width:780px){.sidebar-top{display:flex;justify-content:flex-end;height:36px;flex-shrink:0}.sidebar-close{border:0;background:rgba(255,255,255,.13);color:#fff;font-size:27px;line-height:1;border-radius:10px;width:38px;height:34px;cursor:pointer}.sidebar{padding-top:max(12px,env(safe-area-inset-top));height:100dvh;overflow:hidden}.sidebar nav{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}.sidebar nav button{min-height:44px;flex-shrink:0}.mobile-navigation{flex-shrink:0}.back-btn{min-width:38px;min-height:44px}.menu-btn{border-radius:10px;background:#eef5ff;color:#092149}}
+
+/* Acesso direto à sincronização, independente do menu lateral */
+.settings-shortcut{display:none;border:0;background:#eef5ff;color:#092149;border-radius:10px;min-width:44px;min-height:44px;align-items:center;justify-content:center;cursor:pointer}
+@media(max-width:780px){.settings-shortcut{display:inline-flex}.mobile-navigation{gap:7px}.menu-btn,.settings-shortcut{position:relative;z-index:11;touch-action:manipulation}}
